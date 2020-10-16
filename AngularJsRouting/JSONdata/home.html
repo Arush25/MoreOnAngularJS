@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="data.js"></script>
+    </head>
+    <body>
+        <div ng-app="myApp" ng-controller="myCtrl">
+            <ul ng-repeat="emp in emplist">
+                <li>{{emp.tax_id}}</li>
+                <li>{{emp.name}}</li>
+                <li>{{emp.limit}}</li>
+                <li>{{emp.tax_type}}</li>
+            </ul>
+        </div>
+    </body>
+</html>

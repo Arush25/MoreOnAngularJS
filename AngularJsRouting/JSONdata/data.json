@@ -1,0 +1,224 @@
+{
+    "status": "success",
+    "message": "Tax Saving details",
+    "data": {
+        "48": {
+            "_id": "5f23e575654284103c000038",
+            "legal_entity_id": "5cd9359c6542848053000029",
+            "emp_id": "5822cd89ec95754c1c00002c",
+            "tax_id": 48,
+            "parent_sec_no": "house_rent_detail",
+            "parent_name": "House Rent Detail",
+            "sec_no": "Landlord_info",
+            "sec_name": "Landlord Details ( If House rent > 100000)",
+            "sec_limit": null,
+            "status": 1,
+            "landlord_detail": [{
+                "name": "Mr Xyz",
+                "address": "Sanjay Gram",
+                "city": "Gurgaon",
+                "pincode": "122001",
+                "pan_no": "BTHPK1440D",
+                "_id": {
+                    "$id": "5f23e575654284103c000037"
+                }
+            }],
+            "is_uploaded_landlord": false,
+            "updated_by": "5822cd89ec95754c1c00002c",
+            "updated_at": "2020-07-31 15:03:41",
+            "created_at": "2020-07-31 15:03:41"
+        },
+        "47": {
+            "_id": "5f23e575654284103c00003a",
+            "legal_entity_id": "5cd9359c6542848053000029",
+            "emp_id": "5822cd89ec95754c1c00002c",
+            "tax_id": 47,
+            "parent_sec_no": "house_rent_detail",
+            "parent_name": "House Rent Detail",
+            "sec_no": "rent_info",
+            "sec_name": "House Rent Paid\/Payable",
+            "sec_limit": null,
+            "status": 1,
+            "rent_detail": [{
+                "is_metro": false,
+                "from_date": "01\/04\/2020",
+                "end_date": "30\/04\/2020",
+                "from_timestamp": 1585679400,
+                "end_timestamp": 1588185000,
+                "amount": 10000,
+                "address": "Sanjay Gram",
+                "city": "Gurgaon",
+                "pincode": "122001",
+                "landlord_id": "5f23e575654284103c000037",
+                "_id": {
+                    "$id": "5f23e575654284103c000039"
+                },
+                "landlord_info_id": "5f23e575654284103c000038",
+                "landlord_name": "Mr Xyz",
+                "landlord_address": "Sanjay Gram",
+                "landlord_city": "Gurgaon",
+                "landlord_pincode": "122001",
+                "landlord_pan": "BTHPK1440D"
+            }, {
+                "is_metro": false,
+                "from_date": "01\/05\/2020",
+                "end_date": "31\/05\/2020",
+                "from_timestamp": 1588271400,
+                "end_timestamp": 1590863400,
+                "amount": 10000,
+                "address": "Sanjay Gram",
+                "city": "Gurgaon",
+                "pincode": "122001",
+                "landlord_id": "5f23e575654284103c000037",
+                "_id": {
+                    "$id": "5f23e799654284e82700003f"
+                },
+                "landlord_info_id": "5f23e575654284103c000038",
+                "landlord_name": "Mr Xyz",
+                "landlord_address": "Sanjay Gram",
+                "landlord_city": "Gurgaon",
+                "landlord_pincode": "122001",
+                "landlord_pan": "BTHPK1440D"
+            }, {
+                "is_metro": false,
+                "from_date": "01\/06\/2020",
+                "end_date": "30\/06\/2020",
+                "from_timestamp": 1590949800,
+                "end_timestamp": 1593455400,
+                "amount": 10000,
+                "address": "Sanjay Gram",
+                "city": "Gurgaon",
+                "pincode": "122001",
+                "landlord_id": "5f23e575654284103c000037",
+                "_id": {
+                    "$id": "5f28fde16542841c12000034"
+                },
+                "landlord_info_id": "5f23e575654284103c000038",
+                "landlord_name": "Mr Xyz",
+                "landlord_address": "Sanjay Gram",
+                "landlord_city": "Gurgaon",
+                "landlord_pincode": "122001",
+                "landlord_pan": "BTHPK1440D"
+            }],
+            "is_uploaded_rent": false,
+            "updated_by": "5822cd89ec95754c1c00002c",
+            "updated_at": "2020-08-04 11:49:13",
+            "created_at": "2020-07-31 15:03:41"
+        },
+        "1": {
+            "_id": "5f23e6b8654284a80f000035",
+            "emp_id": "5822cd89ec95754c1c00002c",
+            "tax_id": 1,
+            "legal_entity_id": "5cd9359c6542848053000029",
+            "sec_no": "80C",
+            "sec_name": "Part-II Investment U\/s Sec 80C can be made upto Rs. 1.5 Lac together",
+            "parent_sec_no": "form_vi_a",
+            "parent_name": "Chapter VI A",
+            "is_uploaded_tax_declaration": false,
+            "amount_declared": 50000,
+            "updated_at": "2020-08-02 23:09:32",
+            "created_at": "2020-07-31 15:09:04",
+            "investment_claimed": [{
+                "is_uploaded_tax_claimed": false,
+                "status": 1,
+                "amount_claimed": 10000,
+                "reason": "",
+                "updated_by": "5822cd89ec95754c1c00002c",
+                "proof": "1596189819_1_5822cd89ec95754c1c00002c.png",
+                "proof_name": "duracloud_logo_12in (1).png",
+                "_id": {
+                    "$id": "5f23ec7b654284a80f000036"
+                }
+            }, {
+                "is_uploaded_tax_claimed": false,
+                "status": 1,
+                "amount_claimed": 5000,
+                "reason": "",
+                "updated_by": "5822cd89ec95754c1c00002c",
+                "proof": "1596189926_1_5822cd89ec95754c1c00002c.png",
+                "proof_name": "duracloud_logo_12in (2).png",
+                "_id": {
+                    "$id": "5f23ece6654284a80f000037"
+                }
+            }, {
+                "is_uploaded_tax_claimed": false,
+                "status": 1,
+                "amount_claimed": 3700,
+                "reason": "",
+                "updated_by": "5822cd89ec95754c1c00002c",
+                "proof": "1596389786_1_5822cd89ec95754c1c00002c.png",
+                "proof_name": "duracloud_logo_12in.png",
+                "_id": {
+                    "$id": "5f26f99a654284743c00006d"
+                }
+            }],
+            "amount_claimed": 18700,
+            "claim_submitted": 3,
+            "claim_approved": 0,
+            "claim_pending": 3,
+            "claim_rejected": 0,
+            "amount_approved": 0
+        },
+        "2": {
+            "_id": "5f28f869654284281400006d",
+            "emp_id": "5822cd89ec95754c1c00002c",
+            "tax_id": 2,
+            "legal_entity_id": "5cd9359c6542848053000029",
+            "sec_no": "80C",
+            "sec_name": "Part-II Investment U\/s Sec 80C can be made upto Rs. 1.5 Lac together",
+            "parent_sec_no": "form_vi_a",
+            "parent_name": "Chapter VI A",
+            "investment_claimed": [{
+                "is_uploaded_tax_claimed": false,
+                "status": 1,
+                "amount_claimed": 2300,
+                "reason": "",
+                "updated_by": "5822cd89ec95754c1c00002c",
+                "proof": "1596520553_2_5822cd89ec95754c1c00002c.jpg",
+                "proof_name": "fndf.jpg",
+                "_id": {
+                    "$id": "5f28f869654284281400006c"
+                }
+            }, {
+                "is_uploaded_tax_claimed": false,
+                "status": 1,
+                "amount_claimed": 1700,
+                "reason": "",
+                "updated_by": "5822cd89ec95754c1c00002c",
+                "_id": {
+                    "$id": "5f28f883654284281400006e"
+                },
+                "proof": "1596520592_2_5822cd89ec95754c1c00002c.png",
+                "proof_name": "duracloud_logo_12in (2).png"
+            }, {
+                "is_uploaded_tax_claimed": false,
+                "status": 1,
+                "amount_claimed": 1000,
+                "reason": "",
+                "updated_by": "5822cd89ec95754c1c00002c",
+                "proof": "1596520607_2_5822cd89ec95754c1c00002c.png",
+                "proof_name": "duracloud_logo_12in.png",
+                "_id": {
+                    "$id": "5f28f89f654284281400006f"
+                }
+            }, {
+                "is_uploaded_tax_claimed": false,
+                "status": 1,
+                "amount_claimed": 500,
+                "reason": "",
+                "updated_by": "5822cd89ec95754c1c00002c",
+                "_id": {
+                    "$id": "5f28fc556542841c12000033"
+                }
+            }],
+            "amount_claimed": 5500,
+            "claim_submitted": 4,
+            "claim_approved": 0,
+            "claim_pending": 4,
+            "claim_rejected": 0,
+            "amount_approved": 0,
+            "updated_at": "2020-08-04 11:42:37",
+            "created_at": "2020-08-04 11:25:53"
+        }
+    }
+}

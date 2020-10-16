@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Custom Filters</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="customFilters.js"></script>
+</head>
+
+<body>
+    <div ng-app="myApp" ng-contoller="myCtrl">
+        Number: <input type="text" ng-model="number"><br><br>
+        baseNumber: <input type="text" ng-model="baseNumber"><br><br>
+        Your Number in {{number}} in base {{baseNumber}} is {{number | base:baseNumber}}
+
+    </div>
+</body>
+
+</html>

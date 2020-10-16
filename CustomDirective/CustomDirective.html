@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>CustomDirective</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+   <script src="customDirective.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <p>First variable 'name' is : {{ name }}</p>
+    <p>Second value 'age' is : {{age}}</p>
+    <input type="button" value="From Controller" ng-click="alertTheName()">
+    <p>---------------Directive----------</p>
+    <div my-first-directive name="{{ name }}" age="age" func="alertTheName()"></div>
+</body>
+</html>
