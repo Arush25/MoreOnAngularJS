@@ -1,0 +1,28 @@
+Search: <input type="radio" id="Code" value="Code">
+    <label for="Code">Code</label>
+    <input type="radio" id="Name" value="Name">
+    <label for="Name">Name &emsp;&emsp;&emsp;</label><br>
+    <input type="text">
+    <label for="Filters">Filters: </label>
+    <select>
+        <option value="On-going">On-going</option>
+        <option value="Completed">Completed</option>
+    </select>
+</div>
+<table style="border: 1px solid rgb(0, 0, 0); height: 100%; width: 100%;">
+    <tr>
+        <th>Emp Code</th>
+        <th>Name</th>
+        <th>Joining Date</th>
+        <th>Training Completed</th>
+        <th>Next Training</th>
+    </tr>
+    <tr dir-paginate="person in persons | itemsPerPage:5">
+        <td><a href="">{{person.id}}</a></td>
+        <td>{{person.name}}</td>
+        <td>{{person.joiningDate}}</td>
+        <td>{{person.trainingCompleted}}</td>
+        <td>{{person.nextTraining}}&emsp;{{person.nextTrainingDate}}</td>
+    </tr>
+</table>
+<dir-pagination-controls></dir-pagination-controls>

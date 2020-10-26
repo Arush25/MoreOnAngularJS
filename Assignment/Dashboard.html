@@ -1,0 +1,60 @@
+<style>
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .grid-item{
+        border: 1px solid black;
+        padding: 5px;
+        margin: 5px;
+        height: auto;
+        width: auto;
+    }
+</style>
+<div class="grid">
+    <div class="grid-item">
+        <div>{{EmployeeJoined}}</div>
+        <div>Employees joined in last 1 month</div>
+    </div>
+    <div class="grid-item">
+        <div>{{EmployeeJoining}}</div>
+        <div>Employee joining next month</div>         
+    </div>
+    <div class="grid-item">
+        <div>{{OrientationCount}}</div>
+        <div>On-going Orientation</div>
+    </div>
+    <div class="grid-item">
+        <div>{{FeedbackCount}}</div>
+        <div>Feedback recieved in 1 month</div>
+    </div>
+</div>
+<div>
+    Search: <input type="radio" id="Code" value="Code">
+    <label for="Code">Code</label>
+    <input type="radio" id="Name" value="Name">
+    <label for="Name">Name &emsp;&emsp;&emsp;</label><br>
+    <input type="text" ng-model="searchFilter.id" ng-model="searchFilter.name">
+    <label for="Filters">Filters: </label>
+    <select ng-model="searchFilter.trainingCompleted">
+        <option value="">All</option>
+        <option value="0">On-going</option>
+        <option value="1">Completed</option>
+    </select>
+</div>
+<table style="border: 1px solid rgb(0, 0, 0); height: 100%; width: 100%;">
+    <tr>
+        <th>Emp Code</th>
+        <th>Name</th>
+        <th>Joining Date</th>
+        <th>Training Completed</th>
+        <th>Next Training</th>
+    </tr>
+    <tr ng-repeat="person in persons | filter:searchFilter">
+        <td><a href="">{{person.id}}</a></td>
+        <td>{{person.name}}</td>
+        <td>{{person.joiningDate}}</td>
+        <td>{{person.trainingCompleted}}</td>
+        <td>{{person.nextTraining}}&emsp;{{person.nextTrainingDate}}</td>
+    </tr>
+</table>

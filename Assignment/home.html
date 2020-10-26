@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="controller.js"></script>
+    <script src="dirPagination.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div>
+        <button ng-click="func1()"><a href="#!Dashboard"></a>Dashboard</button>
+        <button ng-click="func2()"><a href="#!Employees"></a>Employees</button>
+        <button ng-click="func3()"><a href="#!Feedback"></a>Feedback</button>
+    </div>
+    <div ng-view></div>
+     
+</body>
+</html>
